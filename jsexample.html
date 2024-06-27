@@ -5,9 +5,12 @@
 </head>
 <body>
   <h1>Click on the button</h1>
+  <p>To know if there is a log message in the console, press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>J</kbd> to open the console after clicking the button</p>
   <button onclick="myFunction();">Click me</button>
+  <button onclick="openLink("https://www.google.com", "_self");">Open link to google</button>
   <script>
     function myFunction() { /* alert box and console log for message */ alert("Hello i am an alert box"); console.log("hello i am log msg"); }
+    function openLink(a, b) { window.open(a, b); }
   </script>
 </body>
 </html>
